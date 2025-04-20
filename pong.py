@@ -1,7 +1,5 @@
 from time import sleep
 import pygame
-import wn
-
 
 def bouncy_ball_lol():
     global speed_x, speed_y, score1, score2
@@ -49,7 +47,7 @@ run = True
 while run:
     # slowin down movement
     sleep(0.01)
-    wn.update()
+    pygame.display.update()
     # drawing stuff to screen
     screen.fill((0, 0, 0))
     pygame.draw.rect(screen, (255, 255, 255), boundary1)
